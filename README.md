@@ -1,39 +1,33 @@
-# calculadora-junit
 
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.Test;
+# Calculadora com Testes JUnit
 
-public class CalculadoraTeste {
+Este projeto implementa uma calculadora simples em Java com operações matemáticas básicas e testes unitários usando JUnit 5.
 
-    Calculadora calc = new Calculadora();
+## Funcionalidades
 
-    @Test
-    public void testSomar() {
-        assertEquals(15, calc.somar(10, 5));
-    }
+- Soma
+- Subtração
+- Multiplicação
+- Divisão
+- Potenciação
 
-    @Test
-    public void testSubtrair() {
-        assertEquals(5, calc.subtrair(10, 5));
-    }
+## Tecnologias utilizadas
 
-    @Test
-    public void testMultiplicar() {
-        assertEquals(50, calc.multiplicar(10, 5));
-    }
+- Java
+- JUnit 5
+- VS Code
+- GitHub
 
-    @Test
-    public void testDividir() {
-        assertEquals(2, calc.dividir(10, 5));
-    }
+## Como executar
 
-    @Test
-    public void testDividirPorZero() {
-        assertThrows(ArithmeticException.class, () -> calc.dividir(10, 0));
-    }
+1. Clone o repositório no seu VS Code:
+   ```bash
+   git clone https://github.com/seu-usuario/calculadora-junit.git
+   ```
+2. Abra o projeto no VS Code.
+3. Compile e execute a classe `Calculadora.java` para testes manuais.
+4. Execute os testes com `CalculadoraTeste.java` usando uma extensão ou terminal com suporte JUnit.
 
-    @Test
-    public void testPotenciar() {
-        assertEquals(8, calc.potenciar(2, 3));
-    }
-}
+## Autor
+
+Marlon Emanuel Silva Gonçalves
